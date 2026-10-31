@@ -3,11 +3,11 @@ import NeuralGlow from '@/components/NeuralGlow';
 export default function Home() {
   return (
     <>
-      <section className="relative h-screen overflow-hidden bg-black">
+      <section className="hero-over-glow relative h-screen overflow-hidden bg-black">
         <NeuralGlow />
 
-        <nav className="relative z-10 flex items-center justify-end px-6 py-5 md:px-10">
-          <span className="font-brand absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-semibold tracking-[0.2em] text-white/90 sm:text-xl md:text-2xl md:tracking-[0.26em] lg:text-[1.75rem] lg:tracking-[0.28em]">
+        <nav className="relative z-10 flex items-center justify-between px-6 py-5 md:px-10">
+          <span className="font-brand text-lg font-semibold tracking-[0.2em] text-white/90 sm:text-xl md:text-2xl md:tracking-[0.26em] lg:text-[1.75rem] lg:tracking-[0.28em]">
             Synura
           </span>
           <div className="flex items-center gap-8 text-sm text-white/70">
@@ -24,7 +24,7 @@ export default function Home() {
         </nav>
 
         <div className="relative z-10 flex h-[calc(100vh-4.5rem)] flex-col items-center justify-center px-6 text-center">
-          <h1 className="font-display max-w-3xl text-4xl font-semibold tracking-tight text-zinc-100 [text-shadow:0_1px_28px_rgba(0,0,0,0.45)] md:text-6xl">
+          <h1 className="font-display max-w-3xl text-4xl font-semibold tracking-tight text-zinc-100 md:text-6xl">
             Cognition, Amplified
           </h1>
           <p className="mt-4 max-w-xl text-lg text-white/70 md:text-xl">
@@ -46,6 +46,22 @@ export default function Home() {
             </button>
           </div>
         </div>
+
+        <a
+          href="#about"
+          aria-label="Scroll to explore"
+          className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-white/50 transition-colors hover:text-white/80"
+        >
+          <span className="text-[10px] font-medium uppercase tracking-[0.22em]">
+            Scroll
+          </span>
+          <span
+            className="flex h-9 w-5 items-start justify-center rounded-full border border-white/25 pt-1.5"
+            aria-hidden
+          >
+            <span className="hero-scroll-dot block h-1 w-1 rounded-full bg-white/80" />
+          </span>
+        </a>
       </section>
 
       <section
