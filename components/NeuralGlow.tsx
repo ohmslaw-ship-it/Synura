@@ -81,7 +81,9 @@ const NeuralGlow = () => {
         noise = 1.2 * pow(noise, 3.);
         noise += pow(noise, 10.);
         noise = max(.0, noise - .5);
-        noise *= (1. - length(vUv - .5));
+        float side = smoothstep(0.12, 0.42, abs(vUv.x - 0.5));
+        float near = 1.0 - smoothstep(0.0, 0.35, length(pointer));
+        noise *= max(side, near);
 
         // Blue/indigo color palette
         color = vec3(0.35, 0.75, 1.0);
