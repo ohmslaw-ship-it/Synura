@@ -31,6 +31,20 @@ export default function Home() {
             A reactive synaptic display that mirrors your focus and intent —
             built for next-gen neurotechnology.
           </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <button
+              type="button"
+              className="rounded-full bg-white px-8 py-3 text-lg font-normal text-black transition-transform duration-300 ease-out hover:scale-[1.02] md:text-xl"
+            >
+              Join the waitlist
+            </button>
+            <button
+              type="button"
+              className="rounded-full border border-white/25 bg-white/10 px-8 py-3 text-lg font-normal text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-md transition-transform duration-300 ease-out hover:scale-[1.02] md:text-xl"
+            >
+              See how it works
+            </button>
+          </div>
         </div>
       </section>
 
