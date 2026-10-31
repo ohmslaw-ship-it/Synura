@@ -56,10 +56,10 @@ export default function HowItWorks() {
       className="bg-black px-6 py-24 text-white md:px-10 md:py-32"
     >
       <div className="mx-auto max-w-5xl">
-        <p className="text-center text-[10px] font-medium uppercase tracking-[0.28em] text-sky-400">
+        <p className="font-display text-center text-2xl font-semibold uppercase leading-tight tracking-[0.12em] text-sky-400 sm:text-[1.75rem] sm:tracking-[0.14em] md:text-3xl md:tracking-[0.16em]">
           HOW IT WORKS
         </p>
-        <h2 className="font-display mt-4 text-center text-3xl font-semibold tracking-tight text-zinc-100 sm:text-4xl md:text-[2.5rem]">
+        <h2 className="font-display mt-3 text-center text-3xl font-semibold leading-tight tracking-tight text-zinc-100 sm:mt-4 sm:text-4xl md:text-[2.5rem]">
           From signal to clarity
         </h2>
 
