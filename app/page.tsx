@@ -1,3 +1,4 @@
+import HowItWorks from '@/components/HowItWorks';
 import NeuralGlow from '@/components/NeuralGlow';
 import Statement from '@/components/Statement';
 
@@ -66,6 +67,7 @@ export default function Home() {
       </section>
 
       <Statement />
+      <HowItWorks />
     </>
   );
 }
