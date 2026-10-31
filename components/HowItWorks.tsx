@@ -53,17 +53,19 @@ export default function HowItWorks() {
   return (
     <section
       ref={sectionRef}
-      className="bg-black px-6 py-24 text-white md:px-10 md:py-32"
+      className="bg-black px-6 py-20 text-white md:px-10 md:py-32"
     >
       <div className="mx-auto max-w-5xl">
-        <p className="font-display text-center text-2xl font-semibold uppercase leading-tight tracking-[0.12em] text-sky-400 sm:text-[1.75rem] sm:tracking-[0.14em] md:text-3xl md:tracking-[0.16em]">
-          HOW IT WORKS
-        </p>
-        <h2 className="font-display mt-3 text-center text-3xl font-semibold leading-tight tracking-tight text-zinc-100 sm:mt-4 sm:text-4xl md:text-[2.5rem]">
-          From signal to clarity
-        </h2>
+        <div className="mb-16">
+          <p className="font-display text-center text-2xl font-semibold uppercase leading-tight tracking-[0.12em] text-sky-400 sm:text-[1.75rem] sm:tracking-[0.14em] md:text-3xl md:tracking-[0.16em]">
+            HOW IT WORKS
+          </p>
+          <h2 className="font-display mt-3 text-center text-3xl font-semibold leading-tight tracking-tight text-zinc-100 sm:mt-4 sm:text-4xl md:text-[2.5rem]">
+            From signal to clarity
+          </h2>
+        </div>
 
-        <div className="relative mt-16 md:mt-20">
+        <div className="relative">
           {/* Desktop: horizontal connector between circle centers */}
           <div
             className="pointer-events-none absolute left-[calc(16.666%-1.375rem)] right-[calc(16.666%-1.375rem)] top-[1.375rem] hidden h-px md:block"

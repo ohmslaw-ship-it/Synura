@@ -33,8 +33,8 @@ function handleSpotlightMove(event: React.MouseEvent<HTMLElement>) {
   const rect = event.currentTarget.getBoundingClientRect();
   const x = event.clientX - rect.left;
   const y = event.clientY - rect.top;
-  event.currentTarget.style.setProperty('--spotlight-x', `${x}px`);
-  event.currentTarget.style.setProperty('--spotlight-y', `${y}px`);
+  event.currentTarget.style.setProperty('--x', `${x}px`);
+  event.currentTarget.style.setProperty('--y', `${y}px`);
 }
 
 export default function Features() {
@@ -62,18 +62,18 @@ export default function Features() {
   return (
     <section
       ref={sectionRef}
-      className="bg-black px-6 py-24 text-white md:px-10 md:py-32"
+      className="bg-black px-6 py-20 text-white md:px-10 md:py-32"
     >
       <div className="mx-auto max-w-5xl">
-        <h2 className="font-display text-center text-3xl font-semibold leading-tight tracking-tight text-zinc-100 sm:text-4xl md:text-[2.5rem]">
+        <h2 className="font-display mb-16 text-center text-3xl font-semibold leading-tight tracking-tight text-zinc-100 sm:text-4xl md:text-[2.5rem]">
           Built for the way you think
         </h2>
 
-        <ul className="mt-14 grid gap-5 sm:mt-16 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+        <ul className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {FEATURES.map((feature, index) => (
             <li
               key={feature.title}
-              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur transition-[opacity,transform,border-color] duration-700 ease-out hover:border-sky-400/70"
+              className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur transition-[opacity,transform,border-color] duration-700 ease-out hover:border-sky-400"
               style={{
                 opacity: visible ? 1 : 0,
                 transform: visible ? 'translateY(0)' : 'translateY(28px)',
@@ -82,11 +82,11 @@ export default function Features() {
               onMouseMove={handleSpotlightMove}
             >
               <div
-                className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 aria-hidden
                 style={{
                   background:
-                    'radial-gradient(520px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%), rgba(56, 189, 248, 0.18), transparent 42%)',
+                    'radial-gradient(300px circle at var(--x, 50%) var(--y, 50%), rgba(56,189,248,0.15), transparent 60%)',
                 }}
               />
               <div className="relative">

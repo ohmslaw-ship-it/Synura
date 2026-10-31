@@ -67,7 +67,7 @@ export default function Statement() {
     <section
       ref={sectionRef}
       id="about"
-      className="relative h-[250vh] bg-black"
+      className="relative h-[250vh] bg-black py-20 md:py-32"
     >
       <div className="sticky top-0 flex h-screen items-center justify-center px-6 md:px-10">
         <p className="font-display max-w-[900px] text-center text-3xl font-semibold leading-tight tracking-tight text-zinc-100 sm:text-4xl md:text-5xl">
