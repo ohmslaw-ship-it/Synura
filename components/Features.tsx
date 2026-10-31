@@ -61,6 +61,7 @@ export default function Features() {
 
   return (
     <section
+      id="features"
       ref={sectionRef}
       className="bg-black px-6 py-20 text-white md:px-10 md:py-32"
     >

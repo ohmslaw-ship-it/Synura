@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Features from '@/components/Features';
 import Stats from '@/components/Stats';
 import WaitlistCTA from '@/components/WaitlistCTA';
@@ -74,6 +75,7 @@ export default function Home() {
       <Features />
       <Stats />
       <WaitlistCTA />
+      <Footer />
     </>
   );
 }
