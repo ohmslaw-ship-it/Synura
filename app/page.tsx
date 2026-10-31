@@ -1,4 +1,5 @@
 import NeuralGlow from '@/components/NeuralGlow';
+import Statement from '@/components/Statement';
 
 export default function Home() {
   return (
@@ -64,21 +65,7 @@ export default function Home() {
         </a>
       </section>
 
-      <section
-        id="about"
-        className="min-h-screen bg-zinc-950 px-6 py-24 text-white md:px-10"
-      >
-        <div className="mx-auto max-w-2xl">
-          <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
-            Scroll to explore
-          </h2>
-          <p className="mt-6 leading-relaxed text-white/60">
-            This section sits below the hero so you can see how scroll progress
-            subtly shifts the shader&apos;s indigo tint. Move your pointer over
-            the viewport above to pull the glow toward your cursor.
-          </p>
-        </div>
-      </section>
+      <Statement />
     </>
   );
 }
