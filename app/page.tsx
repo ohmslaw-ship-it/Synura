@@ -1,5 +1,6 @@
 import Features from '@/components/Features';
 import Stats from '@/components/Stats';
+import WaitlistCTA from '@/components/WaitlistCTA';
 import HowItWorks from '@/components/HowItWorks';
 import NeuralGlow from '@/components/NeuralGlow';
 import Statement from '@/components/Statement';
@@ -36,12 +37,12 @@ export default function Home() {
             built for next-gen neurotechnology.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <button
-              type="button"
+            <a
+              href="#waitlist"
               className="rounded-full bg-white px-8 py-3 text-lg font-normal text-black transition-transform duration-300 ease-out hover:scale-[1.02] md:text-xl"
             >
               Join the waitlist
-            </button>
+            </a>
             <button
               type="button"
               className="rounded-full border border-white/25 bg-white/10 px-8 py-3 text-lg font-normal text-white shadow-[inset_0_1px_0_0_rgba(255,255,255,0.12)] backdrop-blur-md transition-transform duration-300 ease-out hover:scale-[1.02] md:text-xl"
@@ -72,6 +73,7 @@ export default function Home() {
       <HowItWorks />
       <Features />
       <Stats />
+      <WaitlistCTA />
     </>
   );
 }
