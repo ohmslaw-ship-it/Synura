@@ -1,4 +1,5 @@
 import Features from '@/components/Features';
+import Stats from '@/components/Stats';
 import HowItWorks from '@/components/HowItWorks';
 import NeuralGlow from '@/components/NeuralGlow';
 import Statement from '@/components/Statement';
@@ -70,6 +71,7 @@ export default function Home() {
       <Statement />
       <HowItWorks />
       <Features />
+      <Stats />
     </>
   );
 }
